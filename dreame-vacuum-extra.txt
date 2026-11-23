@@ -1,0 +1,7 @@
+# OPTIONAL, riskier. Add only after dreame-vacuum-camera.txt has been tested for a few days.
+# Observed from a Dreame L40 Ultra (EU), 2026-11. Purpose is NOT verified; one of them may be needed for device registration or updates.
+# Add one at a time (comment the other out) and test: app, clean, dock, base station, scheduled run, reboot.
+# The Tencent IoT Hub name contains a product ID, so it is specific to this model.
+
+pxl5y08v1e.ap-bangkok.iothub.tencentdevices.com
+git.dreame.tech

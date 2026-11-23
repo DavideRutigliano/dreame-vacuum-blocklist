@@ -1,0 +1,9 @@
+# Blocklist for the Tencent IoT video / P2P endpoints a Dreame robot vacuum (L40 Ultra) contacts.
+# Observed in DNS logs of a real L40 Ultra (EU), 2026-11. Roles are inferred from the names, not verified.
+# Blocking these should only disable the live camera view; test the robot (app, clean, dock, base station) after adding it.
+# Do NOT block *.iot.dreame.tech: that is the control channel and the robot stops working without it.
+# Please report anything that breaks.
+
+ap-singapore.gateway.iotvideo.tencentcs.com
+stun.iotcloud.tencentiotcloud.com
+stun.iotcloud.tencentdevices.com
