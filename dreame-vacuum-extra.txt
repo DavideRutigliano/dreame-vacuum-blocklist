@@ -2,6 +2,9 @@
 # Observed from a Dreame L40 Ultra (EU), 2026-11. Purpose is NOT verified; one of them may be needed for device registration or updates.
 # Add one at a time (comment the other out) and test: app, clean, dock, base station, scheduled run, reboot.
 # The Tencent IoT Hub name contains a product ID, so it is specific to this model.
+# The OSS bucket is Dreame's EU object storage (Alibaba Cloud, Frankfurt), likely maps/logs/voice packs/firmware. May break map sync or app features.
+# AdGuard also blocks names that CNAME to a blocked target, so the Dreame host that points at the bucket fails too.
 
 pxl5y08v1e.ap-bangkok.iothub.tencentdevices.com
 git.dreame.tech
+dreame-eu.oss-eu-central-1.aliyuncs.com
