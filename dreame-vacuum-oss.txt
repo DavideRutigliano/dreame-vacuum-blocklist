@@ -1,0 +1,8 @@
+# EXPERIMENTAL. Dreame's EU object-storage bucket (Alibaba Cloud OSS, Frankfurt).
+# Seen as a CNAME target in DNS answers for a Dreame L40 Ultra (EU), 2026-11.
+# Probably used for file transfer (maps, logs, voice packs, firmware). Purpose NOT verified.
+# Blocking it may stop firmware updates, and may also break map sync, cleaning history or app features. Test those after adding it.
+# AdGuard also blocks names that CNAME to a blocked target, so whichever Dreame host points here will fail too.
+# Keep this in its own list so it is easy to remove.
+
+dreame-eu.oss-eu-central-1.aliyuncs.com

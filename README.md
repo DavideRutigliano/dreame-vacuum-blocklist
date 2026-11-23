@@ -7,12 +7,14 @@ Domain-per-line format, usable in AdGuard Home (Filters, DNS blocklists) and Pi-
 |---|---|---|
 | `dreame-vacuum-camera.txt` | Tencent IoT video and STUN (camera / P2P) | Low: live camera view stops |
 | `dreame-vacuum-extra.txt` | Other observed hosts, purpose unverified | Higher: test one at a time |
+| `dreame-vacuum-oss.txt` | Dreame EU object storage (Alibaba OSS), likely maps/logs/firmware | Highest: may break map sync or app features |
 
-Never block `*.iot.dreame.tech`: it is the control channel.
+Never block `*.iot.dreame.tech` or the `nlb-*.eu-central-1.nlb.aliyuncs.com` load balancer behind it: that is the control channel.
 
 Raw URLs:
 
 - `https://raw.githubusercontent.com/DavideRutigliano/dreame-vacuum-blocklist/main/dreame-vacuum-camera.txt`
 - `https://raw.githubusercontent.com/DavideRutigliano/dreame-vacuum-blocklist/main/dreame-vacuum-extra.txt`
+- `https://raw.githubusercontent.com/DavideRutigliano/dreame-vacuum-blocklist/main/dreame-vacuum-oss.txt`
 
 These lists apply to every client that uses the resolver. Hostnames come from one robot and region, so other models or regions may use other names. Not tested on other models. Pull requests welcome.
